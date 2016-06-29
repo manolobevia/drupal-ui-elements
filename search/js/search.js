@@ -1,8 +1,8 @@
 $(document).ready(function(){
     
     /////////////////////////////
-     // Home search filter
-     // Toggle filter select list
+    // Home search filter
+    // Toggle filter select list
      var $searchFilterList = $('#filter-search-nav');
      var $isFilterOpen = false;
 
@@ -12,35 +12,30 @@ $(document).ready(function(){
          if (!$isFilterOpen) {
 
              //Change button filter state to selected
-             
              $(this).find('span').removeClass('filter-default');
              $(this).find('span').addClass('filter-active');
 
              //Reveal filter select list
              $searchFilterList.css('display','block');
-
              $isFilterOpen = true;
 
          } else {
              //Change button filter state to default
-             
              $(this).find('span').removeClass('filter-active');
              $(this).find('span').addClass('filter-default');
 
              //Hide filter select list
              $searchFilterList.css('display','none');
-
              $isFilterOpen = false;
 
          }
     });
 
-     //
-     //
+     /////////////////////////////
      // Collect users' selection
      //
      // 
-        var $selectedFilter = "Library Catalog";
+        var $selectedFilter = "Google";
 
        $('#filter-search-nav li').each(function(index){
            $(this).click(function(ev){
@@ -62,11 +57,9 @@ $(document).ready(function(){
                console.log($searchFilterList);
 
                //Change button filter state to default
-               //$('a.filter-search').css('background','url(../../themes/vivo-cornell/images/filteredSearch.gif) no-repeat right top');
                $('a.filter-search').removeClass('filter-active');
                $('a.filter-search').addClass('filter-default');
 
-               
                $isFilterOpen = false;
 
 
@@ -93,12 +86,10 @@ $(document).ready(function(){
                     $('#filter-search-nav').hide();
 
                     //Change button filter state to default
-                    //$('a.filter-search').css('background','url(../../themes/vivo-cornell/images/filteredSearch.gif) no-repeat right top');
                     $('div.filter-search').find('span').removeClass('filter-active');
                     $('div.filter-search').find('span').addClass('filter-default');
 
                     $isFilterOpen = false;
-
              }
 
        });
@@ -113,63 +104,18 @@ $(document).ready(function(){
 
           switch ($selectedFilter) {
 
-                case 'Library Catalog':
-                    $(this).attr("action", 'https://search.library.cornell.edu');
+                case 'Google':
+                    $(this).attr("action", 'https://www.google.com/search?q=');
                     break;
 
-                case 'WorldCat':
-                    $(this).attr("action", 'http://cornell.worldcat.org/search?qt=wc_org_cornell');
+                case 'DuckDuckGo':
+                    $(this).attr("action", 'https://duckduckgo.com/?q=');
                     break;
 
-                case 'Activities':
+                case 'Bing':
 
-                    $(this).attr("method", 'get');
-                    $('#edit_keys').name = "keys";
-                    $(this).attr("action", '/search/node/');
+                    $(this).attr("action", 'http://www.bing.com/search?q=');
                     break;
             }
-
-
-
-          //$(this).attr("action", 'https://search.library.cornell.edu');
-
         });
-
-
-       /*
-
-
-          $("#selectsearch").change(function() {
-            var action = $(this).val() == "people" ? "user" : "content";
-            $("#search-form").attr("action", "/search/" + action);
-          });
-
-          */
-
 	});
-
-
-
-
-/*function chgAction() {
-
-            var form = document.form1;
-            
-            //console.log('chgAction()');
-            //console.log(form.search_type.selectedIndex);
-            
-            switch (form.search_type.selectedIndex) {
-                case 0:
-                    form.action = "https://search.library.cornell.edu";
-                    break;
-                case 1:
-                    form.action = "http://cornell.worldcat.org/search?qt=wc_org_cornell";
-                    break;
-                case 2:
-                    form.method = "get";
-                    form.action = "/search/node/";
-                    form.edit_keys.name = "keys";
-                    break;
-            }
-        }
-*/

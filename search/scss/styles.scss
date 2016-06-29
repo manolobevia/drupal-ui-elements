@@ -16,7 +16,7 @@ body {
     z-index: 9996;
 
     label {
-        font-size: 27px;
+        font-size: 30px;
         color: #fff;
         padding-top: 24px;
         font-weight: 400;
@@ -27,7 +27,7 @@ body {
         }
     }
 
-    //////////////
+    /////////
 
     .filtered-search {
         
@@ -81,9 +81,9 @@ body {
             .glyphicon-chevron-down {
 
                 color: #1ebae1;
-                font-size: 25px;
+                font-size: 30px;
                 line-height: 51px;
-                padding-left: 10px;
+                padding-left: 8px;
 
             }
 
@@ -100,7 +100,6 @@ body {
                 -ms-transform: rotate(180deg); /* IE 9 */
                 -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
                 transform: rotate(180deg);
-                padding-right: 12px;
             }
         }
 
@@ -119,11 +118,10 @@ body {
 
             li {
 
-                //padding-top: 10px;
-                //padding-bottom: 10px;
-                padding-left: 13px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
                 height: 51px;
-                line-height: 51px;
                 border-bottom: 1px solid #d6d6d6;
             }
         }
@@ -168,6 +166,7 @@ body {
         }
     }
 }
+
 
 
 
