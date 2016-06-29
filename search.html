@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Filtered Search</title>
+ 
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<meta name="author" content="" />
+<!--<ink rel="shortcut icon" href="../favicon.ico">-->
+ 
+<!-- Removing initial-scale=1.0 disables zooming capabilities -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href='//fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+ 
+<!-- Bootstrap Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
+ 
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+<![endif]-->
+ 
+<!--[if gte IE 9]>
+<![endif]-->
+
+
+</style>
+
+
+</head>
+ 
+<body>
+
+<!-- SEARCH BOX -->       
+<section class="search-home">
+
+    <form id="search" name="form1" method="get" action="https://search.library.cornell.edu">
+
+        <label for="name">Search <span class="search-filter-selected">Google</span></label>
+
+        <div class="filtered-search">
+
+            <input type="text" class="search-homepage" name="q" value="" id="edit_keys" />
+
+            <div class="filter-search"><span class="active">Google</span> <span class="glyphicon glyphicon-chevron-down filter-default"></span>
+
+              <ul id="filter-search-nav">
+                  <li><a href="#" title="">Google</a></li>
+                  <li><a href="#" title="">DuckDuckGo</a></li>
+                  <li><a href="#" title="">Bing</a></li>
+              </ul>
+
+          </div>
+
+          <button type="submit" class="submit-search" href="#">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+
+        </div>
+
+        <ul class="external-search">
+          <li><a href="http://www.amazon.com" title="">Amazon</a> / </li>
+          <li><a href="http://www.ebay.com" title="">Ebay</a> / </li>
+          <li><a href="http://www.netflix.com" title="">Netflix</a></li>
+        </ul>
+    </form>         
+    
+</section>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="search.js"></script>
+
+</body>
+</html>
