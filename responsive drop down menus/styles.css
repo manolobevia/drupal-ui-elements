@@ -1,0 +1,141 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+  background: #33383b;
+  position: relative; }
+
+a.sandwich {
+  width: 3.125em;
+  /* 50 */
+  height: 45px;
+  /* 50 */
+  text-align: left;
+  background-color: #3f3c3a;
+  position: relative;
+  float: right;
+  display: block; }
+  a.sandwich:before, a.sandwich:after {
+    position: absolute;
+    border: 2px solid #fff;
+    top: 35%;
+    left: 25%;
+    right: 25%;
+    content: ''; }
+  a.sandwich:after {
+    top: 60%; }
+
+#nav {
+  position: absolute;
+  top: 45px;
+  width: 100%;
+  display: none; }
+  #nav ul.first-level {
+    display: block;
+    margin: 0;
+    list-style: none;
+    font-family: 'abel', sans-serif;
+    position: relative;
+    padding-left: 20px; }
+    #nav ul.first-level li:hover a {
+      color: #95d8fe;
+      text-decoration: none; }
+    #nav ul.first-level li:hover .wrapper {
+      display: block;
+      height: auto; }
+    #nav ul.first-level li {
+      font-size: 22px;
+      display: inline-block;
+      width: 100%;
+      float: left;
+      padding-right: 10px;
+      color: #fff; }
+      #nav ul.first-level li a {
+        color: #fff; }
+      #nav ul.first-level li .wrapper {
+        padding: 0;
+        position: relative;
+        width: 100%;
+        display: none;
+        padding-bottom: 10px;
+        padding-top: 10px; }
+        #nav ul.first-level li .wrapper .row {
+          padding: 0;
+          width: 90%;
+          margin: 0 auto;
+          display: block; }
+          #nav ul.first-level li .wrapper .row div {
+            padding-left: 0; }
+            #nav ul.first-level li .wrapper .row div .center {
+              width: 100%;
+              border-right: none; }
+              #nav ul.first-level li .wrapper .row div .center .second-level {
+                color: #fff;
+                margin-bottom: 2px; }
+                #nav ul.first-level li .wrapper .row div .center .second-level img {
+                  padding-bottom: 20px; }
+              #nav ul.first-level li .wrapper .row div .center .third-level {
+                color: #fff;
+                padding-left: 20px;
+                display: none; }
+                #nav ul.first-level li .wrapper .row div .center .third-level li {
+                  color: #fff;
+                  display: block; }
+                #nav ul.first-level li .wrapper .row div .center .third-level li:hover {
+                  background: #fff;
+                  color: gray; }
+          #nav ul.first-level li .wrapper .row div:last-child {
+            border-right: none; }
+
+@media (min-width: 640px) {
+  a.sandwich {
+    display: none; }
+
+  #nav {
+    display: block !important; }
+    #nav ul.first-level {
+      margin: 0;
+      list-style: none;
+      font-family: 'abel', sans-serif; }
+      #nav ul.first-level li:hover a {
+        color: #95d8fe;
+        text-decoration: none; }
+      #nav ul.first-level li:hover .wrapper {
+        display: block;
+        position: absolute;
+        top: 30px; }
+      #nav ul.first-level li {
+        font-size: 20px;
+        display: inline;
+        padding-right: 10px;
+        color: #fff;
+        width: auto;
+        position: relative;
+        padding-bottom: 10px; }
+        #nav ul.first-level li a {
+          color: #fff; }
+        #nav ul.first-level li .wrapper {
+          padding: 0;
+          width: 200px;
+          background-color: #fff;
+          display: none;
+          padding-bottom: 20px;
+          padding-top: 20px; }
+          #nav ul.first-level li .wrapper .second-level {
+            color: #33383b;
+            font-weight: bold;
+            margin-bottom: 2px;
+            background-color: #fff;
+            margin-left: 20px; }
+          #nav ul.first-level li .wrapper .third-level {
+            color: #33383b;
+            padding-left: 30px;
+            display: block;
+            background-color: #fff; }
+            #nav ul.first-level li .wrapper .third-level li {
+              color: #33383b;
+              display: block; }
+            #nav ul.first-level li .wrapper .third-level li:hover {
+              background: #fff;
+              color: gray; }
+          #nav ul.first-level li .wrapper div:last-child {
+            border-right: none; } }
