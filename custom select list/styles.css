@@ -1,0 +1,38 @@
+#how-do-i {
+  margin-top: 100px;
+  margin-left: 100px;
+  border: 1px solid #d6d6d6;
+  display: inline-block; }
+  #how-do-i .how-do-i-select {
+    color: #4d4e53;
+    padding: 12px 20px 10px 20px;
+    font-size: 32px;
+    font-weight: bold;
+    width: 400px;
+    display: block; }
+    #how-do-i .how-do-i-select span {
+      float: right;
+      color: #b37f2c; }
+    #how-do-i .how-do-i-select:hover {
+      text-decoration: none;
+      color: rgba(77, 78, 83, 0.5);
+      border-bottom: 1px solid #d6d6d6; }
+  #how-do-i .how-do-i-options {
+    display: none;
+    list-style-type: none;
+    padding: 10px 20px 10px 20px;
+    text-align: left;
+    margin-bottom: 0; }
+    #how-do-i .how-do-i-options:hover {
+      border-top: 1px solid #d6d6d6; }
+    #how-do-i .how-do-i-options li a {
+      font-size: 28px;
+      color: #4d4e53; }
+      #how-do-i .how-do-i-options li a:hover {
+        text-decoration: none;
+        color: rgba(77, 78, 83, 0.5); }
+
+#how-do-i:hover .how-do-i-options {
+  display: block; }
+
+/*# sourceMappingURL=styles.css.map */
